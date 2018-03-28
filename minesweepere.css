@@ -1,0 +1,216 @@
+html {
+	height:100%;
+	width:100%
+}
+body {
+	height:100%;
+	width:100%
+}
+.center {
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+.title_main h3 {
+	text-align:center;
+}
+#game_field{
+	margin:auto;
+	border:solid;
+}
+@media screen and (max-width:500px) {
+	#game_field td {
+		height:23px;
+		width:23px;
+		text-align:center;
+		border:2px #000000 solid;
+	}
+	.title_how_to_play {
+		background-color:#4ec4d3;
+		width:360px;
+		text-align:center;
+	}
+	#how_to_play {
+		margin:auto;
+		width:360px;
+		margin-bottom:50px;
+	}
+	#game_over_message {
+		width:250px;
+		height:50px;
+		margin:0;
+		padding:10px 20px;
+		border:2px solid #aaa;
+		background:#fff;
+		position:relative;
+		display:none;
+		z-index:2;
+	}
+	#game_clear_message h2 {
+		position:absolute;
+		color:lime;
+		letter-spacing: 10px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		width: 68%;
+		height: 50%;
+	}
+	#game_over_message h2 {
+		position:absolute;
+		color:red;
+		letter-spacing: 10px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		width: 75%;
+		height: 50%;
+	}
+}
+@media screen and (min-width:501px) and (max-width:1024px) {
+	#game_field td {
+		height:40px;
+		width:40px;
+		text-align:center;
+		border:2px #000000 solid;
+	}
+	.title_how_to_play {
+		background-color:#4ec4d3;
+		width:600px;
+		text-align:center;
+	}
+	#how_to_play {
+		margin:auto;
+		width:600px;
+		margin-bottom:50px;
+	}
+	#game_over_message {
+		width:250px;
+		height:50px;
+		margin:0;
+		padding:10px 20px;
+		border:2px solid #aaa;
+		background:#fff;
+		position:relative;
+		display:none;
+		z-index:2;
+	}
+	#game_clear_message h2 {
+		position:absolute;
+		color:lime;
+		letter-spacing: 10px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		width: 65%;
+		height: 50%;
+	}
+	#game_over_message h2 {
+		position:absolute;
+		color:red;
+		letter-spacing: 10px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		width: 70%;
+		height: 50%;
+	}
+}
+@media screen and (min-width:1025px) {
+	#game_field td {
+		height:30px;
+		width:30px;
+		text-align:center;
+		border:2px #000000 solid;
+	}
+	.title_how_to_play {
+		background-color:#4ec4d3;
+		width:600px;
+		text-align:center;
+	}
+	#how_to_play {
+		padding:0.5em 1em;
+		margin:auto;
+		width:600px;
+		margin-bottom:50px;
+	}
+	#game_over_message {
+		width:370px;
+		height:50px;
+		margin:0;
+		padding:10px 20px;
+		border:2px solid #aaa;
+		background:#fff;
+		position:relative;
+		display:none;
+		z-index:2;
+	}
+	#game_clear_message h2 {
+		position:absolute;
+		color:lime;
+		letter-spacing: 10px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		width: 50%;
+		height: 50%;
+	}
+	#game_over_message h2 {
+		position:absolute;
+		color:red;
+		letter-spacing: 10px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		width: 50%;
+		height: 50%;
+	}
+}
+#button_area {
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+}
+#button_area p {
+	margin:0;
+}
+.restart_button {
+	text-align:center;
+}
+#game_clear_message {
+	width:20%;
+	margin:0;
+	padding:10px 20px;
+	border:2px solid #aaa;
+	background:#fff;
+	position:fixed;
+	display:none;
+	z-index:2;
+}
+#modal-overlay {
+	z-index:1;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120%;
+	background-color:rgba( 0,0,0, 0.75 );
+}
+#how_to_play p {
+	margin:0; 
+	padding:0;
+}

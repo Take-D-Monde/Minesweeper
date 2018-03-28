@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>マインスイーパー</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script src="./main.js"></script>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="minesweepere.css">
+	</head>
+	<body>
+		<div class="center">
+			<div class="title_main"><h3>マインスイーパー</h3></div>
+			<table id="game_field"></table>
+			<div id="button_area">
+				<p><b>難易度選択</b></p>
+				<input type="radio" name="difficulty" value="easy" id="easy">易しい
+				<input type="radio" name="difficulty" value="normal" id="normal">普通
+				<input type="radio" name="difficulty" value="hard" id="hard">難しい
+				<button	class="restart_button"　type="button">スタート</button>
+			</div>
+			<div id="how_to_play">
+				<div class="title_how_to_play"><b>遊び方</b></div>
+				<p>マス目をクリックします。クリックした箇所に現れる数字は隣接するマスに置かれている爆弾の数を表します。</p>
+				<p>クリックしたマスにも、その隣接したマスにも爆弾が無ければ、クリックしたマスは緑色になります。</p>
+				<p>もし、クリックしたマスに爆弾があれば、マスは赤色になります。</p>
+				<p>爆弾の置かれていない箇所をクリックしていき、爆弾の置かれていない箇所をすべてをクリックするとゲームクリアになります。</p>
+				<p>もし、爆弾の置かれている箇所をクリックすると、ゲームオーバーになります。</p>
+				<p>「スタート」ボタンを押すと最初から遊べます。</p>
+				<p>ボタンから難易度を選択し、「スタート」ボタンをクリックすると、難易度を変更出来ます。</p>
+			</div>
+		</div>
+
+		<!--  ゲームクリアのモーダル 開始  -->
+		<div id="game_clear_message">
+			<h2>CLEARED!</h2>
+		</div>
+		<!--  ゲームクリアのモーダル 終了  -->
+		<!--  ゲームオーバーのモーダル  開始  -->
+		<div id="game_over_message">
+			<h2>GAMEOVER</h2>
+		</div>
+		<!--  ゲームオーバーのモーダル  終了  -->
+
+	</body>
+</html>
